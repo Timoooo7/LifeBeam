@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">LifeBeam</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Don\'t have account? </string>
+    <string name="signin">Signin</string>
+    <string name="or">Or</string>
+    <string name="logout">Logout</string>
+    <string name="signin_with_google">Signin with</string>
+    <string name="default_web_client_id">1:425997828382:android:1c16bddda5ca356947090f</string>
+    <string name="login_success">"Hello %1$s, we will help you to track your health. Let's be fit!"</string>
+    <string name="account">Account</string>
+    <string name="options">Options</string>
+    <string name="profile">Profile</string>
+    <string name="image">Image</string>
+    <string name="body">Body</string>
+    <string name="tab_profile_1">Profile</string>
+    <string name="tab_profile_2">Body</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="birth">Birth</string>
+    <string name="age">Age</string>
+    <string name="years">years</string>
+    <string name="update">Update</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="weight_unit">kg</string>
+    <string name="height_unit">cm</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+</resources>
