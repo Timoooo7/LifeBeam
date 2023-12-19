@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "425997828382",
+    "project_id": "capstone-project-407013",
+    "storage_bucket": "capstone-project-407013.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425997828382:android:1c16bddda5ca356947090f",
+        "android_client_info": {
+          "package_name": "com.example.lifebeam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425997828382-dogesb1tsuucqf16ugnpcdgn0evirl5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lifebeam",
+            "certificate_hash": "04d68818116ed80a1569ca8f149702cc1fc72b7e"
+          }
+        },
+        {
+          "client_id": "425997828382-vb8j7pu44v6l89ge40qbtbo8u8bf3pcs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM9PO-jIAU_Q7tiUgXEylreq--_dkSH1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425997828382-vb8j7pu44v6l89ge40qbtbo8u8bf3pcs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
