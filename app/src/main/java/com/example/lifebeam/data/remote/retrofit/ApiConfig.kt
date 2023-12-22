@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiConfig {
     companion object {
-        private const val BASE_URL = "https://debug-backend-dot-capstone-project-407013.et.r.appspot.com/"
+        private const val BASE_URL = "https://backend-dot-capstone-project-407013.et.r.appspot.com/"
         fun getApiService(token: String): ApiService {
             val loggingInterceptor = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
             val authInterceptor = Interceptor { chain ->
