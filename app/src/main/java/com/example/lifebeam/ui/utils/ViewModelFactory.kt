@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.lifebeam.data.repository.UserRepository
 import com.example.lifebeam.data.utils.Injection
 import com.example.lifebeam.ui.auth.LoginViewModel
+import com.example.lifebeam.ui.main.MainActivity
 import com.example.lifebeam.ui.main.MainViewModel
 import com.example.lifebeam.ui.profile.ProfileViewModel
 

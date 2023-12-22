@@ -9,9 +9,8 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.view.menu.MenuBuilder
 import com.example.lifebeam.R
-import com.example.lifebeam.data.local.model.UserModel
+import com.example.lifebeam.data.repository.UserModel
 import com.example.lifebeam.databinding.ActivityLoginBinding
 import com.example.lifebeam.ui.main.MainActivity
 import com.example.lifebeam.ui.utils.ViewModelFactory
@@ -27,7 +26,6 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import java.util.Calendar
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -104,7 +102,8 @@ class LoginActivity : AppCompatActivity() {
                             user.email.toString(),
                             user.photoUrl.toString(),
                             user.phoneNumber.toString(),
-                            idToken
+                            idToken,
+                            ""
                         )
                     )
                     Log.d("SuccessSaveSession", user.displayName.toString())

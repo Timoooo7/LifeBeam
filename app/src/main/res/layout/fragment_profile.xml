@@ -22,8 +22,9 @@
             android:layout_height="wrap_content">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/con_name"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +43,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/name"
-                        android:textSize="18sp"
+                        android:textSize="12sp"
                         android:textColor="?attr/colorPrimary"
                         android:textStyle="bold"
                         android:layout_marginStart="80dp"
@@ -52,8 +53,9 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/con_email"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
                 app:layout_constraintTop_toBottomOf="@+id/con_name"
                 app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +75,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/email"
-                    android:textSize="18sp"
+                    android:textSize="12sp"
                     android:textColor="?attr/colorPrimary"
                     android:textStyle="bold"
                     android:layout_marginStart="80dp"
@@ -84,8 +86,9 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/con_age"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
                 app:layout_constraintTop_toBottomOf="@+id/con_email"
                 app:layout_constraintStart_toStartOf="parent"
@@ -136,8 +139,9 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/con_gender"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
                 app:layout_constraintTop_toBottomOf="@+id/con_age"
                 app:layout_constraintStart_toStartOf="parent"
@@ -204,5 +208,25 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/con_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:cardCornerRadius="15dp">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible" />
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

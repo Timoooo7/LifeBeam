@@ -11,21 +11,30 @@ class ProfileSectionPagerAdapter(activity: AppCompatActivity, data: Map<String,S
         if(position == 0){
             val fragment = ProfileFragment()
             fragment.arguments = Bundle().apply {
-                putInt(ProfileFragment.ARG_POSITION, position+1)
+                putString("uid", dataUser["uid"])
+                putString("token", dataUser["token"])
                 putString("name", dataUser["name"])
                 putString("email", dataUser["email"])
             }
             return fragment
-        }else{
+        }else if (position == 1){
             val fragment = BodyFragment()
             fragment.arguments = Bundle().apply {
-                putInt(BodyFragment.ARG_POSITION, position+1)
+                putString("uid", dataUser["uid"])
+                putString("token", dataUser["token"])
+            }
+            return fragment
+        }else{
+            val fragment = ResultFragment()
+            fragment.arguments = Bundle().apply {
+                putString("uid", dataUser["uid"])
+                putString("token", dataUser["token"])
             }
             return fragment
         }
     }
 
     override fun getItemCount(): Int {
-        return 2
+        return 3
     }
 }
